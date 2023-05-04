@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('XGBOOT.pkl', 'rb')) 
+model = pickle.load(open('', 'rb')) 
 model_randomforest = pickle.load(open('randomforest.pkl', 'rb')) 
 dataset= pd.read_csv('Social_Network_Ads.csv')
 X = dataset.iloc[:, [2, 3]].values
