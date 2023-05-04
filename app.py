@@ -44,9 +44,9 @@ def main():
    <div class="" style="background-color:blue;" >
    <div class="clearfix">           
    <div class="col-md-12">
-   <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
-   <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
-   <center><p style="font-size:25px;color:white;margin-top:10px;">Six days FDP on Deep learningk and Machine Learning</p></center> 
+   <center><p style="font-size:40px;color:white;margin-top:10px;">Session on Machine Learning</p></center> 
+   <center><p style="font-size:30px;color:white;margin-top:10px;">ML Algorithm Implenetation</p></center> 
+   <center><p style="font-size:25px;color:white;margin-top:10px;">Project Deployment</p></center> 
    </div>
    </div>
    </div>
@@ -63,20 +63,20 @@ def main():
     #Age = st.text_input("Age","Type Here")
     EstimatedSalary = st.number_input("Insert EstimatedSalary",1000,1000000000)
     resul=""
-    if st.button("SVM Prediction"):
+    if st.button("XGBOOST"):
       result=predict_note_authentication(UserID, Gender,Age,EstimatedSalary)
-      st.success('SVM Model has predicted {}'.format(result))
+      st.success('XGBOOST has predicted {}'.format(result))
     if st.button("Random Forest Prediction"):
       result=predict_random(UserID, Gender,Age,EstimatedSalary)
       st.success('Random forest Model  has predicted {}'.format(result))  
     if st.button("About"):
       st.header("Developed by Mr. Deepak Moud")
-      st.subheader("Head , Department of Computer Engineering")
+      st.subheader("Trainer , Machine Learning")
     html_temp = """
     <div class="" style="background-color:orange;" >
     <div class="clearfix">           
     <div class="col-md-12">
-    <center><p style="font-size:20px;color:white;margin-top:10px;">Machine Learning Experiment : Support Vector Machine and Random Forest</p></center> 
+    <center><p style="font-size:20px;color:white;margin-top:10px;">Machine Learning Experiment : XGBOOST and Random Forest</p></center> 
     </div>
     </div>
     </div>
