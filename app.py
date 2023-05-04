@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('svmmodel.pkl', 'rb')) 
+model = pickle.load(open('XGBOOT.pkl', 'rb')) 
 model_randomforest = pickle.load(open('randomforest.pkl', 'rb')) 
 dataset= pd.read_csv('Social_Network_Ads.csv')
 X = dataset.iloc[:, [2, 3]].values
@@ -45,7 +45,7 @@ def main():
    <div class="clearfix">           
    <div class="col-md-12">
    <center><p style="font-size:40px;color:white;margin-top:10px;">Session on Machine Learning</p></center> 
-   <center><p style="font-size:30px;color:white;margin-top:10px;">ML Algorithm Implenetation</p></center> 
+   <center><p style="font-size:30px;color:white;margin-top:10px;">ML Algorithm Implementation</p></center> 
    <center><p style="font-size:25px;color:white;margin-top:10px;">Project Deployment</p></center> 
    </div>
    </div>
